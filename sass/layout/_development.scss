@@ -1,0 +1,36 @@
+.do {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.do__ul {
+  display: flex;
+}
+.do__container {
+  background: #ffffff;
+}
+.do__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: relative;
+  padding-right: 15px;
+}
+.do__overlay {
+  font-family: var(--main-font);
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 0.8;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 370px;
+  height: 70px;
+  bottom: 0;
+  color: #ffffff;
+  background-color: rgba(47, 48, 58, 0.8);
+}
