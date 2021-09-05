@@ -2,6 +2,14 @@
   padding-top: 94px;
   padding-bottom: 94px;
 }
+@media screen and (min-width: 768px) {
+  .do {
+    display: none;
+  }
+  .do__container {
+    display: none;
+  }
+}
 .do__ul {
   display: flex;
 }
