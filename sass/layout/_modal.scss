@@ -155,7 +155,7 @@
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
-  line-height: 0.5;
+  line-height: 18px;
   /* identical to box height, or 171% */
 
   letter-spacing: 0.03em;
@@ -261,4 +261,18 @@
   letter-spacing: 0.01em;
 
   color: #757575;
+}
+
+@media(max-width: 768px) {
+  .modal {
+    min-width: 80%;
+  }
+}
+
+@media(max-width: 480px) {
+  .modal {
+    min-width: auto;
+    width: 98%;
+    padding: 50px 15px 30px;
+  }
 }

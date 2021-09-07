@@ -2,7 +2,7 @@
   margin-bottom: 94px;
 }
 .work__card {
-  margin-left: 30px;
+  margin-left: 20px;
   margin-top: 30px;
   background: #ffffff;
   border: 1px solid #eeeeee;
@@ -17,6 +17,7 @@
 
 .work__card-list {
   display: flex;
+  justify-content: space-around;
   flex-wrap: wrap;
   margin-top: -30px;
   margin-left: -30px;
@@ -106,5 +107,23 @@
     background: #ffffff;
     border: 1px solid #eeeeee;
     box-sizing: border-box;
+  }
+}
+
+@media(max-width: 480px) {
+  .work__card-list {
+    justify-content: center;
+    margin-left: 0;
+  }
+  .work__card-img img {
+    width: 100%;
+    height: auto;
+  }
+  .work__card {
+    margin-left: 0;
+  }
+  .work__card-link img {
+    width: 100%;
+    height: auto;
   }
 }

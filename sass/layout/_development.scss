@@ -2,14 +2,7 @@
   padding-top: 94px;
   padding-bottom: 94px;
 }
-@media screen and (min-width: 768px) {
-  .do {
-    display: none;
-  }
-  .do__container {
-    display: none;
-  }
-}
+
 .do__ul {
   display: flex;
 }
@@ -41,4 +34,10 @@
   bottom: 0;
   color: #ffffff;
   background-color: rgba(47, 48, 58, 0.8);
+}
+
+@media(max-width: 1024px) {
+  .do {
+    display: none;
+  }
 }
