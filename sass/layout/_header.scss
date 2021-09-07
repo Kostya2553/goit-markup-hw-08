@@ -8,12 +8,15 @@
   display: flex;
   align-items: center;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) {
   .header__menu {
-    display: flex;
-    align-items: center;
+    display: none;
+  }
+  .header__menu-link-l {
+    display: none;
   }
 }
+
 .header__menu {
   display: flex;
   align-items: center;
