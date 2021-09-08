@@ -40,11 +40,20 @@
   .klient__li {
     margin: 0 10px 10px;
   }
+  .klient__a {
+    width: 226px;
+  }
+}
+
+@media(max-width: 768px) {
+  .klient__a {
+    width: 210px;
+  }
 }
 
 @media(max-width: 480px) {
   .klient__li, .klient__a {
-    width: 70%;
+    width: 100%;
     margin: 0 auto 10px auto;
   }
 }

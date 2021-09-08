@@ -2,7 +2,7 @@
   margin-bottom: 94px;
 }
 .work__card {
-  margin-left: 20px;
+  margin: 0 7px;
   margin-top: 30px;
   background: #ffffff;
   border: 1px solid #eeeeee;
@@ -17,7 +17,7 @@
 
 .work__card-list {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex-wrap: wrap;
   margin-top: -30px;
   margin-left: -30px;
@@ -107,6 +107,16 @@
     background: #ffffff;
     border: 1px solid #eeeeee;
     box-sizing: border-box;
+  }
+}
+
+@media(max-width: 768px) {
+  .work__card {
+    width: 450px;
+    &-img img, &-link img {
+      width: 100%;
+      height: auto;
+    }
   }
 }
 
