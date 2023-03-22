@@ -1,18 +1,16 @@
 .do {
-  padding-top: 0 !important;
+  padding-top: 94px;
   padding-bottom: 94px;
 }
-
 .do__ul {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 .do__container {
   background: #ffffff;
 }
 .do__list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
   position: relative;
   padding-right: 15px;
 }
@@ -34,10 +32,4 @@
   bottom: 0;
   color: #ffffff;
   background-color: rgba(47, 48, 58, 0.8);
-}
-
-@media(max-width: 1024px) {
-  .do {
-    display: none;
-  }
 }

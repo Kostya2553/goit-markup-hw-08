@@ -1,18 +1,26 @@
+.name-page {
+  font-family: var(--main-font);
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-top: 94px;
+  margin-bottom: 50px;
+}
 .team__ul {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
+  margin-top: -30px;
+  margin-left: -30px;
 }
 .team__li {
+  margin-left: 30px;
+  margin-top: 30px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background: #ffffff;
-  margin-bottom: 30px;
-  margin-right: 20px;
-  &:last-child {
-    margin-right: 0;
-  }
 }
 .team__people {
   font-family: var(--main-font);
@@ -40,18 +48,12 @@
 
 .team {
   background: #f5f4fa;
-  padding-top: 94px;
   padding-bottom: 94px;
 }
 .social__list-link {
   width: 20px;
   height: 20px;
   fill: #afb1b8;
-
-  .social__list:hover &,
-  .social__list:focus & {
-    fill: #ffffff;
-  }
 }
 .team__container {
   display: flex;
@@ -65,45 +67,24 @@
   justify-content: center;
   margin-bottom: 30px;
 }
-.social__list {
+.social .social__list {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 44px;
   height: 44px;
   border-radius: 50px;
-
-  &:nth-last-child(1) {
-    margin-right: 10px;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-
-  &:hover,
-  &:focus {
-    background-color: #2196f3;
-  }
+}
+.social__list:nth-last-child(1) {
+  margin-right: 10px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media(max-width: 1024px) {
-  .team__ul {
-    justify-content: center;
-  }
-  .team__li {
-    width: 354px;
-  }
-  .team__cards {
-    width: 100%;
-    height: auto;
-  }
+.social__list:hover,
+.social__list:focus {
+  background-color: #2196f3;
 }
-
-@media(max-width: 768px) {
-  .team__li {
-    width: 100%;
-    max-width: 450px;
-  }
-  .team__cards {
-    width: 100%;
-    height: auto;
-  }
+.social__list:hover .social__list-link,
+.social__list:focus .social__list-link {
+  fill: #ffffff;
 }
